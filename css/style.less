@@ -1,0 +1,239 @@
+@main-color: #02918c;
+@text-color: #7e8287;
+@font: 'OpenSans';
+@import "mixin.less";
+.site-header {
+    background: @main-color;
+}
+
+.site-nav {
+    text-transform: uppercase;
+    color: #fff;
+    font-family: @font;
+    padding: 26px 0;
+    ul {
+        list-style: none;
+        float: right;
+        margin: 0;
+        padding: 0;
+        li {
+            display: inline-block;
+            margin-left: 50px;
+            a {
+                text-decoration: none;
+                display: block;
+                font-size: 12px;
+                font-family: @font;
+                color: #fff;
+                text-transform: uppercase;
+                font-weight: bold;
+                border-bottom: 1px solid transparent;
+                &:hover {
+                    border-bottom: 1px solid #fff;
+                    transition: all .5s ease-in-out;
+                }
+            } // a
+        } // li
+    } // ul
+} // site-nav
+.banner {
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 730px;
+    h2 {
+        .banner-text(#fff, 30px, center, @font, 205px);
+    }
+    h1 {
+        .banner-text(#fff, 68px, center, @font, 0);
+        font-weight: 900;
+        letter-spacing: 25px;
+        text-transform: uppercase;
+    }
+    h3 {
+        .banner-text(#fff, 18px, center, @font, 0);
+        position: relative;
+        &:after {
+            content: url(../img/arrow.png);
+            position: absolute;
+            top: 75px;
+            left: 496px;
+        }
+    } // h3
+    & .link {
+        .banner-text(#0b1016, 14px, center, @font, 0);
+        text-transform: uppercase;
+        display: block;
+        height: 50px;
+        width: 200px;
+        background-color: #cfc91d;
+        line-height: 50px;
+        margin: 134px auto;
+        font-weight: bold;
+        transition: all .5s ease-in-out;
+        &:hover {
+            background-color: darken(#cfc91d, 15%);
+            text-decoration: none;
+            color: #fff;
+        }
+    } //.link
+} // banner
+.rubric {
+    h1 {
+        .banner-text(@main-color, 46px, center, @font, 80px);
+        text-transform: uppercase;
+        font-weight: bold;
+    } //h1
+    span {
+        display: block;
+        text-align: center;
+    }
+    p {
+        .banner-text(@text-color, 15px, center, @font, 20px);
+        padding-bottom: 70px;
+        b {
+            font-size: 23px;
+        }
+    } //p
+} //rubrik
+.lamp {
+    .skills-icon(0 auto, 33px, 32px, url(../img/sprites.png), no-repeat, 1px 0, 40px, 30px);
+} //lamp
+.pencil {
+    .skills-icon(0 auto, 33px, 32px, url(../img/sprites.png), no-repeat, -32px 0, 40px, 30px);
+} //pencil
+.truck {
+    .skills-icon(0 auto, 33px, 32px, url(../img/sprites.png), no-repeat, -64px 0, 40px, 30px);
+} //truck
+.laptop {
+    .skills-icon(0 auto, 33px, 32px, url(../img/sprites.png), no-repeat, -96px 0, 40px, 30px);
+} //laptop
+.skills {
+    border-right: 1px solid #d9dbdb;
+    margin-bottom: 100px;
+    &:last-child {
+        border-right: none;
+    }
+    h4 {
+        .banner-text(@text-color, 16px, center, "TimesNewRoman", 0);
+        font-weight: 900;
+        line-height: 23px;
+        padding-bottom: 20px;
+    } //h4
+    p {
+        .banner-text(@text-color, 12px, center, "TimesNewRoman", 0);
+        padding-bottom: 60px;
+        line-height: 25px;
+    } //p
+} //skills
+.services {
+    background: #f0f0e8;
+    h1 {
+        .banner-text(@main-color, 46px, left, @font, 55px);
+        text-transform: uppercase;
+        font-weight: bold;
+        padding-bottom: 30px;
+    }
+    .parag {
+        .banner-text(@text-color, 20px, left, @font, 30px);
+        line-height: 41px;
+    }
+    h4 {
+        .banner-text(@text-color, 16px, left, @font, 0);
+        font-weight: bold;
+        padding-bottom: 5px;
+    }
+    p {
+        .banner-text(@text-color, 12px, left, @font, 10px);
+        line-height: 25px;
+    }
+    .globe {
+        .skills-icon(0, 33px, 32px, url(../img/sprites.png), no-repeat, 4px -33px, 60px, 15px);
+    }
+    .loupe {
+        .skills-icon(0, 33px, 32px, url(../img/sprites.png), no-repeat, -28px -32px, 60px, 15px);
+    }
+    .clock {
+        .skills-icon(0, 33px, 32px, url(../img/sprites.png), no-repeat, -60px -33px, 60px, 15px);
+    }
+    .house {
+        .skills-icon(0, 33px, 32px, url(../img/sprites.png), no-repeat, -94px -33px, 60px, 15px);
+    }
+} //services
+.services-bg {
+    background-image: url(../img/services-bg.jpg);
+    height: 866px;
+    opacity: .3;
+} // ervices-bg
+.my-work {
+    h1 {
+        .banner-text(@main-color, 46px, center, @font, 110px);
+        text-transform: uppercase;
+        font-weight: bold;
+        padding-bottom: 30px;
+    }
+    span {
+        display: block;
+        text-align: center
+    }
+    p {
+        .banner-text(@text-color, 16px, center, @font, 20px);
+        padding-bottom: 70px;
+        line-height: 41px;
+    }
+} //my-work
+.portfolio {
+    .no-padding {
+        padding: 0;
+        a {
+            position: relative;
+            display: block;
+            height: 238px;
+            color: #fff;
+            font-size: 72px;
+            text-align: center;
+            font-family: @font;
+            font-weight: 100;
+            &:after {
+                content: '+';
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                line-height: 1;
+                transition: all .5s ease-in-out;
+                opacity: 0;
+            }
+            &:hover:after {
+                background-color: fade(@main-color, 60%);
+                opacity: 1;
+                line-height: 238/72;
+            }
+        } // a
+    } // no-padding
+    .thumbs1 {
+        background: url(../img/work1.jpg);
+    }
+    .thumbs2 {
+        background: url(../img/work2.jpg);
+    }
+    .thumbs3 {
+        background: url(../img/work3.jpg);
+    }
+    .thumbs4 {
+        background: url(../img/work4.jpg);
+    }
+    .thumbs5 {
+        background: url(../img/work5.jpg);
+    }
+    .thumbs6 {
+        background: url(../img/work6.jpg);
+    }
+    .thumbs7 {
+        background: url(../img/work7.jpg);
+    }
+    .thumbs8 {
+        background: url(../img/work8.jpg);
+    }
+} // portfolio
