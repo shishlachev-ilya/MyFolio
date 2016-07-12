@@ -317,25 +317,56 @@
 }
 .portfolio .thumbs1 {
   background: url(../img/work1.jpg);
+  background-repeat: no-repeat;
 }
 .portfolio .thumbs2 {
   background: url(../img/work2.jpg);
+  background-repeat: no-repeat;
 }
 .portfolio .thumbs3 {
   background: url(../img/work3.jpg);
+  background-repeat: no-repeat;
 }
 .portfolio .thumbs4 {
   background: url(../img/work4.jpg);
+  background-repeat: no-repeat;
 }
 .portfolio .thumbs5 {
   background: url(../img/work5.jpg);
+  background-repeat: no-repeat;
 }
 .portfolio .thumbs6 {
   background: url(../img/work6.jpg);
+  background-repeat: no-repeat;
 }
 .portfolio .thumbs7 {
   background: url(../img/work7.jpg);
+  background-repeat: no-repeat;
 }
 .portfolio .thumbs8 {
   background: url(../img/work8.jpg);
+  background-repeat: no-repeat;
+}
+.contact h1 {
+  color: #02918c;
+  font-size: 46px;
+  text-align: center;
+  font-family: 'OpenSans';
+  padding-top: 80px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.contact span {
+  display: block;
+  text-align: center;
+}
+.contact p {
+  color: #7e8287;
+  font-size: 16px;
+  text-align: center;
+  font-family: 'OpenSans';
+  padding-top: 30px;
+  padding-bottom: 70px;
+  line-height: 41px;
 }
