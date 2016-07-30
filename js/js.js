@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+	/*  анимация при прокрутке  */
     $(window).scroll(function() {
         $('.animated').each(function() {
             var imagePos = $(this).offset().top;
@@ -12,7 +13,9 @@ $(document).ready(function() {
             }
         });
     });
-
+	
+	/*  адаптивное меню  */
+	
     function menu() {
 
         var trig = $('.trigger-js'),
