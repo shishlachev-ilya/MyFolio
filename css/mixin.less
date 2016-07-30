@@ -1,11 +1,11 @@
-.banner-text(@color, @font-size, @center, @text, @pad-top){
+.banner-text(@color, @font-size, @center, @pad-top) {
     color: @color;
     font-size: @font-size;
     text-align: @center;
-    font-family: @text;
     padding-top: @pad-top;
 }
-.skills-icon(@margin, @height, @width, @bg-image, @bg-rep, @bg-pos, @m-top, @m-bot){
+
+.skills-icon(@margin, @height, @width, @bg-image, @bg-rep, @bg-pos, @m-top, @m-bot) {
     margin: @margin;
     height: @height;
     width: @width;
@@ -16,4 +16,28 @@
     margin-bottom: @m-bot;
 }
 
+.extra {
+    font-family: 'OpenSansExtrabold';
+}
 
+.regular {
+    font-family: 'OpenSans';
+}
+
+.link-button {
+    .extra;
+    .banner-text(#0b1016, 14px, center, 0);
+    text-transform: uppercase;
+    display: block;
+    height: 50px;
+    width: 200px;
+    background-color: #cfc91d;
+    line-height: 50px;
+    margin: 0 auto;
+    transition: all .5s ease-in-out;
+    &:hover {
+        background-color: darken(#cfc91d, 15%);
+        text-decoration: none;
+        color: #fff;
+    }
+}

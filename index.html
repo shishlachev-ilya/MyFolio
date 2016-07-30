@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <title>MyFolio</title>
     <link rel="stylesheet/less" href="css/style.less">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <script src="js/less.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/js.js"></script>
     <script src="bootstrap/js/bootstrap.js"></script>
 </head>
 
@@ -15,32 +18,34 @@
     <header class="site-header">
         <nav class="site-nav">
             <div class="container">
-                <ul>
+               <span class="trigger trigger-js">&#9776;</span>
+                <ul class="gorizontal-nav menu-js">
                     <li><a href="#!">home</a></li>
-                    <li><a href="#!">about me</a></li>
-                    <li><a href="#!">services</a></li>
-                    <li><a href="#!">my work</a></li>
-                    <li><a href="#!">contact me</a></li>
+                    <li><a href="#about">about me</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#my-work">my work</a></li>
+                    <li><a href="#contact">contact me</a></li>
                 </ul>
                 <a href="#!">
                     <img src="img/logo.png" alt="site-logo">
                 </a>
             </div><!-- .container -->
-        </nav> <!-- .site-nav -->
-    </header>
-    
+        </nav><!-- .site-nav -->
+    </header><!-- header -->
+
     <section class="banner">
         <div class="container">
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <h2 class="text">Lorem ipsum dolor sit iusmod tempor</h2>
                 <h1>incididut bore</h1>
                 <h3>orem ipsum dolor sit amet, consectetur</h3>
+                <p><img src="img/arrow.png" alt="arrow"></p>
                 <a href="#!" class="link">know more</a>
-            </div>
+            </div><!-- col -->
         </div><!-- .container -->
     </section><!-- .banner -->
-    
-    <section class="about">
+
+    <section id="about">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 rubric">
@@ -48,110 +53,175 @@
                     <span>~~~~~~~~ :: ~~~~~~~~</span>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <b>quis nostrud exercitation ullamco </b>laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor.</p>
                 </div>
-            </div><!-- .row -->
+            </div>
+            <!-- .row -->
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3 skills">
+                    <div class="col-md-3 col-sm-6 col-xs-12 skills animated down">
                         <div class="lamp"></div>
                         <h4>Title goes here</h4>
-                        <p>onsectetur adipisicing elit, sedo <br> eiusmod tempor incidi <br> et dolorerserss eerhfre mag.</p>
+                        <p>onsectetur adipisicing elit, sedo
+                            <br> eiusmod tempor incidi
+                            <br> et dolorerserss eerhfre mag.</p>
                     </div><!-- skills -->
-                    <div class="col-md-3 skills">
+                    
+                    <div class="col-md-3 col-sm-6 col-xs-12 skills animated left">
                         <div class="pencil"></div>
                         <h4>Title goes here</h4>
-                        <p>onsectetur adipisicing elit, sedo <br> eiusmod tempor incidi <br> et dolorerserss eerhfre mag.</p>
+                        <p>onsectetur adipisicing elit, sedo
+                            <br> eiusmod tempor incidi
+                            <br> et dolorerserss eerhfre mag.</p>
                     </div><!-- skills -->
-                    <div class="col-md-3 skills">
+                    
+                    <div class="col-md-3 col-sm-6 col-xs-12 skills animated right">
                         <div class="truck"></div>
                         <h4>Title goes here</h4>
-                        <p>onsectetur adipisicing elit, sedo <br> eiusmod tempor incidi <br> et dolorerserss eerhfre mag.</p>
+                        <p>onsectetur adipisicing elit, sedo
+                            <br> eiusmod tempor incidi
+                            <br> et dolorerserss eerhfre mag.</p>
                     </div><!-- skills -->
-                    <div class="col-md-3 skills">
+                    
+                    <div class="col-md-3 col-sm-6 col-xs-12 skills animated up">
                         <div class="laptop"></div>
                         <h4>Title goes here</h4>
-                        <p>onsectetur adipisicing elit, sedo <br> eiusmod tempor incidi <br> et dolorerserss eerhfre mag.</p>
+                        <p>onsectetur adipisicing elit, sedo
+                            <br> eiusmod tempor incidi
+                            <br> et dolorerserss eerhfre mag.</p>
                     </div><!-- skills -->
-                </div> <!-- row -->
+                </div><!-- row -->
             </div><!-- container -->
         </div><!-- container -->
     </section><!-- .about -->
-    
-    <section class="services">
+
+    <section id="services">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                   <h1>services</h1>
-                   <span>~~~~~ :: ~~~~~</span>
-                   <p class="parag">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
-tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="col-md-12 col-sm-12">
+                    <h1>services</h1>
+                    <span>~~~~~ :: ~~~~~</span>
+                    <p class="parag">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.</p>
                     <div class="row">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <div class="globe"></div>
-                                    <h4>Title goes here</h4>
-                        <p>onsectetur adipisicing elit, sedo <br> eiusmod tempor incidi <br> et dolorerserss eerhfre mag.</p>
-                                    <div class="clock"></div>
-                                    <h4>Title goes here</h4>
-                        <p>onsectetur adipisicing elit, sedo <br> eiusmod tempor incidi <br> et dolorerserss eerhfre mag.</p>
-                                </div><!-- col-md-3 -->
-                                <div class="col-md-3">
-                                    <div class="loupe"></div>
-                                    <h4>Title goes here</h4>
-                        <p>onsectetur adipisicing elit, sedo <br> eiusmod tempor incidi <br> et dolorerserss eerhfre mag.</p>
-                                    <div class="house"></div>
-                                    <h4>Title goes here</h4>
-                        <p>onsectetur adipisicing elit, sedo <br> eiusmod tempor incidi <br> et dolorerserss eerhfre mag.</p>
-                                </div><!-- col-md-3 -->
-                            </div><!-- row -->
-                        </div><!-- container -->
-                    </div><!-- row -->
-                </div>
-                <div class="col-md-6 services-bg">6</div>
+                        <div class="col-md-6 col-sm-6">
+							<div class="globe"></div>
+							<h4>Title goes here</h4>
+							<p>onsectetur adipisicing elit, sedo
+								<br> eiusmod tempor incidi
+								<br> et dolorerserss eerhfre mag.</p>
+						</div><!-- col-md-6 -->
+						
+						<div class="col-md-6 col-sm-6">
+							<div class="loupe"></div>
+							<h4>Title goes here</h4>
+							<p>onsectetur adipisicing elit, sedo
+								<br> eiusmod tempor incidi
+								<br> et dolorerserss eerhfre mag.</p>
+						</div><!-- col-md-6 -->
+						
+						<div class="col-md-6 col-sm-6">
+							<div class="clock"></div>
+							<h4>Title goes here</h4>
+							<p>onsectetur adipisicing elit, sedo
+								<br> eiusmod tempor incidi
+								<br> et dolorerserss eerhfre mag.</p>
+						</div><!-- col-md-6 -->
+						
+						<div class="col-md-6 col-sm-6">
+							<div class="house"></div>
+							<h4>Title goes here</h4>
+							<p>onsectetur adipisicing elit, sedo
+								<br> eiusmod tempor incidi
+								<br> et dolorerserss eerhfre mag.</p>
+						</div><!-- col-md-6 -->
+              		
+               		</div><!-- row -->
+                </div><!-- col -->
             </div><!-- row -->
         </div><!-- container -->
     </section><!-- services -->
-    
-    <section class="my-work">
+
+    <section id="my-work">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <h1>my work</h1>
                     <span>~~~~~ :: ~~~~~</span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt <br>
-ut labore et dolore magna aliqua.</p>
-                </div>
-            </div>
-        </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        <br> ut labore et dolore magna aliqua.</p>
+                </div><!-- col -->
+            </div><!-- row -->
+        </div><!-- container -->
     </section><!-- my-work -->
-    
-    <section class="portfolio">
+
+    <section id="portfolio">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-12 no-padding"><a href="#!" class="thumbs1"></a></div>
-                <div class="col-md-3 col-sm-6 col-xs-12 no-padding"><a href="#!" class="thumbs2"></a></div>
-                <div class="col-md-3 col-sm-6 col-xs-12 no-padding"><a href="#!" class="thumbs3"></a></div>
-                <div class="col-md-3 col-sm-6 col-xs-12 no-padding"><a href="#!" class="thumbs4"></a></div>
-                <div class="col-md-3 col-sm-6 col-xs-12 no-padding"><a href="#!" class="thumbs5"></a></div>
-                <div class="col-md-3 col-sm-6 col-xs-12 no-padding"><a href="#!" class="thumbs6"></a></div>
-                <div class="col-md-3 col-sm-6 col-xs-12 no-padding"><a href="#!" class="thumbs7"></a></div>
-                <div class="col-md-3 col-sm-6 col-xs-12 no-padding"><a href="#!" class="thumbs8"></a></div>
-            </div>
-        </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 no-padding">
+                   <a href="#!" class="thumbs1"></a>
+                </div><!-- col -->
+                
+                <div class="col-md-3 col-sm-6 col-xs-12 no-padding">
+                    <a href="#!" class="thumbs2"></a>
+                </div><!-- col -->
+                
+                <div class="col-md-3 col-sm-6 col-xs-12 no-padding">
+                    <a href="#!" class="thumbs3"></a>
+                </div><!-- col -->
+                
+                <div class="col-md-3 col-sm-6 col-xs-12 no-padding">
+                    <a href="#!" class="thumbs4"></a>
+                </div><!-- col -->
+                
+                <div class="col-md-3 col-sm-6 col-xs-12 no-padding">
+                    <a href="#!" class="thumbs5"></a>
+                </div><!-- col -->
+                
+                <div class="col-md-3 col-sm-6 col-xs-12 no-padding">
+                    <a href="#!" class="thumbs6"></a>
+                </div><!-- col -->
+                
+                <div class="col-md-3 col-sm-6 col-xs-12 no-padding">
+                    <a href="#!" class="thumbs7"></a>
+                </div><!-- col -->
+                
+                <div class="col-md-3 col-sm-6 col-xs-12 no-padding">
+                    <a href="#!" class="thumbs8"></a>
+                </div><!-- col -->
+                
+            </div><!-- row -->
+        </div><!-- container -->
     </section><!-- portfolio -->
-    
-    <section class="contact">
+
+    <section id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <h1>contact me</h1>
                     <span>~~~~~ :: ~~~~~</span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt <br>
-ut labore et dolore magna aliqua.</p>
-                </div>    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        <br> ut labore et dolore magna aliqua.</p>
+                </div><!-- col -->
             </div><!-- row -->
         </div><!-- container -->
-    </section> <!--  -->
-</body>
+    </section><!-- contact -->
+    
+    <section id="form">
+        <div class="col-md-6 col-md-offset-3 bg-col">
+            <input type="text" placeholder="name" class="text-center">
+            <input type="email" placeholder="email adress" class="text-center">
+        </div><!-- col -->
+        
+        <div class="col-md-8 col-md-offset-2 bg-col">
+        	<input type="text" placeholder="message" class="text-center">
+            <input type="text" class="text-center">
+            <a href="#!" class="link">submit</a>
+        </div><!-- col -->
+        
+    </section><!-- form -->
+    
+    <footer>
+        <p>&copy; myfolio</p>
+        <p>created by Shishlachev Ilya</p>
+    </footer><!-- footer -->
+</body><!-- body -->
 
-</html>
+</html><!-- html -->
