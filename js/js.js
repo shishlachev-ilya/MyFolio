@@ -1,18 +1,6 @@
 $(document).ready(function() {
 
-	/*  анимация при прокрутке  */
-    $(window).scroll(function() {
-        $('.animated').each(function() {
-            var imagePos = $(this).offset().top;
-            var topOfWindow = $(window).scrollTop();
-            if (imagePos < topOfWindow + 700) {
-                $('.down').addClass('bounceInDown');
-                $('.left').addClass('bounceInLeft');
-                $('.right').addClass('bounceInRight');
-                $('.up').addClass('bounceInUp');
-            }
-        });
-    });
+	new WOW().init();
 	
 	/*  адаптивное меню  */
 	
@@ -33,6 +21,31 @@ $(document).ready(function() {
         });
     }
     menu();
+	
+	/* меню при скролле*/
+	
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 1){
+		$('.site-nav').addClass("scroll");
+		}
+		else{
+		$('.site-nav').removeClass("scroll");
+		}
+		});
+	
+	
+	 
+
+	$(".gorizontal-nav").on("click","a", function (event) {
+		
+		event.preventDefault();
+		
+		var id  = $(this).attr('href'),
+			top = $(id).offset().top;
+
+		$('body,html').animate({scrollTop: top}, 1500);
+	});
+
 
 
 });

@@ -37,6 +37,9 @@
 }
 .site-header {
   background: #02918c;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
 }
 .site-nav {
   font-family: 'OpenSans';
@@ -67,6 +70,9 @@
   border-bottom: 1px solid #cfc91d;
   color: #cfc91d;
   transition: all 0.5s ease-in-out;
+}
+.scroll {
+  padding: 10px 0;
 }
 .banner {
   background-image: url(../img/bg.jpg);
@@ -468,10 +474,10 @@
   text-decoration: none;
   color: #fff;
 }
-footer {
+#form footer {
   background-color: #000000;
 }
-footer p {
+#form footer p {
   color: #7e8287;
   font-size: 12px;
   text-align: center;
@@ -488,24 +494,171 @@ footer p {
   display: none;
   cursor: pointer;
 }
-@media (max-width: 991px) {
-  .skills {
+@media (max-width: 320px) {
+  .banner {
+    min-height: 530px;
+  }
+  .banner h2 {
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 55px;
+  }
+  .banner h1 {
+    color: #ffffff;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 20px;
+    letter-spacing: 5px;
+  }
+  .banner h3 {
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 20px;
+  }
+  #about h1 {
+    color: #02918c;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 30px;
+  }
+  #about p {
+    color: #7e8287;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  #about p b {
+    font-size: 18px;
+  }
+  #about .skills {
     border-right: none;
+    margin-bottom: 10px;
   }
-  #portfolio .no-padding a {
-    width: 84%;
+  #about .skills p {
+    padding-bottom: 0;
   }
-  footer {
-    margin-top: -70px;
+  #services {
+    padding-bottom: 50px;
+  }
+  #services h1 {
+    color: #02918c;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 30px;
+  }
+  #services .parag {
+    line-height: 32px;
+    font-size: 16px;
+  }
+  #my-work h1 {
+    color: #02918c;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 30px;
+  }
+  #my-work p {
+    line-height: 32px;
+    font-size: 16px;
+  }
+  #contact h1 {
+    color: #02918c;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 30px;
+  }
+  #contact p {
+    line-height: 32px;
+    font-size: 16px;
   }
 }
-@media (max-width: 767px) {
-  .banner h1 {
-    font-size: ;
+@media (min-width: 321px) and (max-width: 480px) {
+  .banner {
+    min-height: 530px;
   }
-  #portfolio .no-padding a {
-    width: 44%;
-    margin: 0 auto;
+  .banner h2 {
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 55px;
+  }
+  .banner h1 {
+    color: #ffffff;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 20px;
+    letter-spacing: 5px;
+  }
+  .banner h3 {
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 20px;
+  }
+  #about h1 {
+    color: #02918c;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 30px;
+  }
+  #about p {
+    color: #7e8287;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  #about p b {
+    font-size: 18px;
+  }
+  #about .skills {
+    border-right: none;
+    margin-bottom: 10px;
+  }
+  #about .skills p {
+    padding-bottom: 0;
+  }
+  #services h1 {
+    color: #02918c;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 30px;
+  }
+  #services .parag {
+    line-height: 32px;
+    font-size: 16px;
+  }
+  #my-work h1 {
+    color: #02918c;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 30px;
+  }
+  #my-work p {
+    line-height: 32px;
+    font-size: 16px;
+  }
+  #portfolio .thumbs1,
+  #portfolio .thumbs2,
+  #portfolio .thumbs3,
+  #portfolio .thumbs4,
+  #portfolio .thumbs5,
+  #portfolio .thumbs6,
+  #portfolio .thumbs7,
+  #portfolio .thumbs8 {
+    background-size: 100%;
+  }
+  #contact h1 {
+    color: #02918c;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 30px;
+  }
+  #contact p {
+    line-height: 32px;
+    font-size: 16px;
   }
 }
 @media (max-width: 732px) {
@@ -525,6 +678,7 @@ footer p {
     top: 100%;
     left: 0;
     width: 100%;
+    z-index: 999;
   }
   .site-nav .gorizontal-nav li {
     display: block;
@@ -539,5 +693,47 @@ footer p {
   }
   .site-nav .gorizontal-nav li a {
     padding: 13px;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .banner h1 {
+    color: #ffffff;
+    font-size: 56px;
+    text-align: center;
+    padding-top: 20px;
+    letter-spacing: 18px;
+  }
+  #about .skills {
+    width: 50%;
+    border-right: none;
+    margin-bottom: 40px;
+  }
+  #about .skills p {
+    padding-bottom: 0;
+  }
+  #services .service {
+    width: 50%;
+  }
+  #portfolio .thumbs1,
+  #portfolio .thumbs2,
+  #portfolio .thumbs3,
+  #portfolio .thumbs4,
+  #portfolio .thumbs5,
+  #portfolio .thumbs6,
+  #portfolio .thumbs7,
+  #portfolio .thumbs8 {
+    background-size: 100%;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  #portfolio .thumbs1,
+  #portfolio .thumbs2,
+  #portfolio .thumbs3,
+  #portfolio .thumbs4,
+  #portfolio .thumbs5,
+  #portfolio .thumbs6,
+  #portfolio .thumbs7,
+  #portfolio .thumbs8 {
+    background-size: 100%;
   }
 }
