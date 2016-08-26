@@ -46,6 +46,7 @@
   text-transform: uppercase;
   color: #fff;
   padding: 26px 0;
+  transition: all .5s ease;
 }
 .site-nav ul {
   list-style: none;
