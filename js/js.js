@@ -22,6 +22,10 @@ $(document).ready(function() {
     }
     menu();
 	
+	$('.menu-js li a').click(function(){
+		$('.menu-js').hide();
+	});
+	
 	/* меню при скролле*/
 	
 	$(window).scroll(function() {
