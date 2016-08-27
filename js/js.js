@@ -23,7 +23,11 @@ $(document).ready(function() {
     menu();
 	
 	$('.menu-js li a').click(function(){
-		$('.menu-js').hide();
+		if ($(window).width() < 732) {
+              $('.menu-js').hide();
+            }else{
+			   $('.menu-js').show();
+			}
 	});
 	
 	/* меню при скролле*/
