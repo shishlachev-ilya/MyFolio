@@ -72,6 +72,10 @@
   color: #cfc91d;
   transition: all 0.5s ease-in-out;
 }
+.site-nav ul li a:focus {
+  border-bottom: 1px solid #cfc91d;
+  color: #cfc91d;
+}
 .scroll {
   padding: 10px 0;
 }
@@ -503,7 +507,7 @@
     color: #ffffff;
     font-size: 18px;
     text-align: center;
-    padding-top: 55px;
+    padding-top: 75px;
   }
   .banner h1 {
     color: #ffffff;

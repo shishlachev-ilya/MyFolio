@@ -24,10 +24,10 @@ $(document).ready(function() {
 	
 	$('.menu-js li a').click(function(){
 		if ($(window).width() < 732) {
-              $('.menu-js').hide();
-            }else{
-			   $('.menu-js').show();
-			}
+            $('.menu-js').hide();
+        }else{
+			$('.menu-js').show();
+		}
 	});
 	
 	/* меню при скролле*/
@@ -40,9 +40,6 @@ $(document).ready(function() {
 		$('.site-nav').removeClass("scroll");
 		}
 		});
-	
-	
-	 
 
 	$(".gorizontal-nav").on("click","a", function (event) {
 		
